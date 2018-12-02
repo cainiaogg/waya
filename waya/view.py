@@ -33,13 +33,30 @@ def trans(request):
 
 def deal_text(dir_name):
     f = open(dir_name, 'r')
+
+    #初始化标签列
     lab_col = 0
+
+    #根据第7列的值来选择标签
     ex_col = 6
+
+    #用于判断是否是第一行
     line_cnt = 0
+
+    #实验列集合
     ex_list = []
+
+    #标签列集合
     lab_list = []
+
+    #输入数据每一行
     line_list = []
 
+    #1、最后一列为标签列
+    #2、获得ex_list
+    #3、获得lab_list
+    #4、获得line_list
+    #5、对lab_list和ex_list 去重排序
     for line in f.readlines():
         line_list.append(line)
         try:
@@ -58,10 +75,15 @@ def deal_text(dir_name):
     ex_list.sort()
     f.close()
 
+    #1、实验列，找到每个元素在这一列里字典序去重排序以后的位置
+    #比如 1、3、2、2 -> ex_list = 1，2，3 -> ex_dict = {1->0, 3->2, 2->1, 2->1}
     ex_dict = dict()
     for line in range(len(ex_list)):
         ex_dict[ex_list[line]] = line
 
+    #比如 ex_list = {7,8,9,10,11}, lab_list = {0,1,2,3}
+    #len(ex_list) = 5, len(lab_list) = 4
+    #按照 5/4=1的长度来分割lab_list 7,8,9,10 11 -> 0,1,2,3 3
     line_cnt = 0
     result = ""
     for line in line_list:
@@ -72,7 +94,9 @@ def deal_text(dir_name):
         line = line.strip().split(',')
         index = ex_dict[line[ex_col]]
         index = index / (len(ex_list)/len(lab_list))
-        line[lab_col] = lab_list[index - 1]
+        if(index >= len(lab_list)):
+            index = len(lab_list) - 1
+        line[lab_col] = lab_list[index]
         cc_index = 0
         for cc in line:
             if cc_index == 0:
