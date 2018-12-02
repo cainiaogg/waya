@@ -1,0 +1,43 @@
+html	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<html xmlns="http:\/\/www.w3.org\/1999\/xhtml" xml:lang="en" lang="en">$/;"	function	line:3
+head	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<head>$/;"	function	line:4
+meta	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^    <meta http-equiv="Content-Type" content="text\/html; charset=UTF-8" \/>$/;"	function	line:5
+title	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^    <title><\/title>$/;"	function	line:6
+body	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<body>$/;"	function	line:8
+h	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<h1>register<\/h1>$/;"	function	line:9
+form	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<form method="post" enctype="multipart\/form-data" >$/;"	function	line:10
+input	/Users/didi/tmp/wangyan/waya/templates/trans.html	/^<input type="submit" value="ok"\/>$/;"	function	line:12
+os	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^import os$/;"	namespace	line:13
+BASE_DIR	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	variable	line:16
+SECRET_KEY	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^SECRET_KEY = 'j44(c!n73-jdh+s8ka4ncwha73%+_i2=%&5emmj*l!cflx$^s*'$/;"	variable	line:23
+DEBUG	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^DEBUG = True$/;"	variable	line:26
+ALLOWED_HOSTS	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^ALLOWED_HOSTS = []$/;"	variable	line:28
+INSTALLED_APPS	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^INSTALLED_APPS = [$/;"	variable	line:33
+MIDDLEWARE	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^MIDDLEWARE = [$/;"	variable	line:43
+ROOT_URLCONF	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^ROOT_URLCONF = 'waya.urls'$/;"	variable	line:53
+TEMPLATES	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^TEMPLATES = [$/;"	variable	line:55
+WSGI_APPLICATION	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^WSGI_APPLICATION = 'waya.wsgi.application'$/;"	variable	line:71
+DATABASES	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^DATABASES = {$/;"	variable	line:77
+AUTH_PASSWORD_VALIDATORS	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	variable	line:88
+LANGUAGE_CODE	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	variable	line:107
+TIME_ZONE	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^TIME_ZONE = 'UTC'$/;"	variable	line:109
+USE_I18N	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^USE_I18N = True$/;"	variable	line:111
+USE_L10N	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^USE_L10N = True$/;"	variable	line:113
+USE_TZ	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^USE_TZ = True$/;"	variable	line:115
+STATIC_URL	/Users/didi/tmp/wangyan/waya/waya/settings.py	/^STATIC_URL = '\/static\/'$/;"	variable	line:121
+models	/Users/didi/tmp/wangyan/waya/waya/models.py	/^from django.db import models$/;"	namespace	line:1
+Data	/Users/didi/tmp/wangyan/waya/waya/models.py	/^class Data(models.Model):$/;"	class	line:4
+datatype	/Users/didi/tmp/wangyan/waya/waya/models.py	/^    datatype = models.CharField(max_length = 30)$/;"	variable	line:5	class:Data
+database	/Users/didi/tmp/wangyan/waya/waya/models.py	/^    database = models.FileField(upload_to = '.\/upload\/')$/;"	variable	line:6	class:Data
+__unicode__	/Users/didi/tmp/wangyan/waya/waya/models.py	/^    def __unicode__(self):$/;"	member	line:8	class:Data	file:
+render	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.shortcuts import render,render_to_response$/;"	namespace	line:1
+render_to_response	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.shortcuts import render,render_to_response$/;"	namespace	line:1
+forms	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django import forms$/;"	namespace	line:2
+HttpResponse	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.http import HttpResponse$/;"	namespace	line:3
+Data	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from waya.models import Data$/;"	namespace	line:4
+os	/Users/didi/tmp/wangyan/waya/waya/view.py	/^import os$/;"	namespace	line:5
+filename	/Users/didi/tmp/wangyan/waya/waya/view.py	/^filename = '\/Users\/joseph\/work\/python\/poem.txt'$/;"	variable	line:8
+DataForm	/Users/didi/tmp/wangyan/waya/waya/view.py	/^class DataForm(forms.Form):$/;"	class	line:10
+datatype	/Users/didi/tmp/wangyan/waya/waya/view.py	/^    datatype = forms.CharField()$/;"	variable	line:11	class:DataForm
+database	/Users/didi/tmp/wangyan/waya/waya/view.py	/^    database = forms.FileField()$/;"	variable	line:12	class:DataForm
+trans	/Users/didi/tmp/wangyan/waya/waya/view.py	/^def trans(request):$/;"	function	line:14
+deal_text	/Users/didi/tmp/wangyan/waya/waya/view.py	/^def deal_text(dir_name):$/;"	function	line:34

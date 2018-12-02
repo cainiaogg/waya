@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+render	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.shortcuts import render,render_to_response$/;"	namespace	line:1
+render_to_response	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.shortcuts import render,render_to_response$/;"	namespace	line:1
+forms	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django import forms$/;"	namespace	line:2
+HttpResponse	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from django.http import HttpResponse$/;"	namespace	line:3
+Data	/Users/didi/tmp/wangyan/waya/waya/view.py	/^from waya.models import Data$/;"	namespace	line:4
+os	/Users/didi/tmp/wangyan/waya/waya/view.py	/^import os$/;"	namespace	line:5
+filename	/Users/didi/tmp/wangyan/waya/waya/view.py	/^filename = '\/Users\/joseph\/work\/python\/poem.txt'$/;"	variable	line:8
+DataForm	/Users/didi/tmp/wangyan/waya/waya/view.py	/^class DataForm(forms.Form):$/;"	class	line:10
+datatype	/Users/didi/tmp/wangyan/waya/waya/view.py	/^    datatype = forms.CharField()$/;"	variable	line:11	class:DataForm
+database	/Users/didi/tmp/wangyan/waya/waya/view.py	/^    database = forms.FileField()$/;"	variable	line:12	class:DataForm
+trans	/Users/didi/tmp/wangyan/waya/waya/view.py	/^def trans(request):$/;"	function	line:14
+deal_text	/Users/didi/tmp/wangyan/waya/waya/view.py	/^def deal_text(dir_name):$/;"	function	line:34
