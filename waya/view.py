@@ -31,6 +31,11 @@ def trans(request):
         uf = DataForm()
     return render_to_response('trans.html',{'uf':uf})
 
+
+# 3, 4, 2, 7, 0假设这个是某一列的值，然后标签是1，2，3.
+# 先排序: 0,2,3,4,7
+# 然后分三分：0 2，3 4， 7
+# 然后 0和2标签变成1，3和4标签变成2，7标签变成3
 def deal_text(dir_name):
     f = open(dir_name, 'r')
 
